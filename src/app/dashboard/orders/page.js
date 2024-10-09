@@ -6,4 +6,4 @@ const OrdersPage = () => {
   )
 }
 
-export default OrdersPage
+export default OrdersPage;
