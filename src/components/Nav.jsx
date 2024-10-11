@@ -7,7 +7,7 @@ const Nav = () => {
   const pathname = usePathname();
     return (
     <nav>
-      <ul>
+      <ul className= "container mx-auto flex flex-row justify-between">
         <li>
           <Link className={`link ${pathname ==="/" ? "active" : ""}`} href="/">HOME</Link>
         </li>
@@ -18,7 +18,13 @@ const Nav = () => {
           <Link className={`link ${pathname ==="/posts" ? "active" : ""}`}href="/posts">POSTS</Link>
         </li>
         <li>
-          <Link className={`link ${pathname ==="/dashboard" ? "active" : ""}`}href="/dashboard">Dashboard</Link>
+          <Link className={`link ${pathname ==="/exemplo?parametro=teste" ? "active" : ""}`}href="/exemplo?parametro=teste">PARÂMETRO</Link>
+        </li>
+        <li>
+          <Link className={`link ${pathname ==="/dashboard" ? "active" : ""}`}href="/dashboard">DASHBOARD</Link>
+        </li>
+        <li>
+          <Link className={`link ${pathname ==="/profile" ? "active" : ""}`}href="/profile">Perfil</Link>
         </li>
       </ul>
     </nav>

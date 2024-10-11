@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import React from 'react'
+
 
 const ProfilePage = () => {
 const user = true;
